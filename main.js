@@ -1,4 +1,4 @@
-const hamburger = document.getElementById('hamburguer')
+const hamburger = document.getElementById('hamburger')
 const sidebar = document.getElementById('sidebar')
 const overlay = document.getElementById('overlay')
 
@@ -7,13 +7,13 @@ let menuOpen = false
 function openMenu() {
     menuOpen = true
     overlay.style.display = 'block'
-    sidebar.style.display = '300px'
+    sidebar.style.width = '300px'
 }
 
 function closeMenu() {
     menuOpen = false
     overlay.style.display = 'none'
-    sidebar.style.display = '0px'
+    sidebar.style.width = '0px'
 }
 
 
