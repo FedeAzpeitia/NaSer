@@ -1,0 +1,105 @@
+/* general */
+
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* mobile */
+
+@media screen and (max-width: 480px) {
+    
+.gridContainer{
+    display: grid;
+    grid-template-areas:
+    "sidebar header navDer"
+    "sidebar slider slider"
+    "sidebar benefits benefits";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+#overlay{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+#sidebar{
+    display: flex;
+    grid-area: sidebar;
+    align-items: start;
+    height: 100vh;
+    width: 300px;
+    z-index: 2;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.menuIzq{
+    height: 10rem;
+    width: 300px;
+    display: flex;
+    flex-flow: column nowrap;
+    left: 0;
+    padding: 0;
+}
+
+
+.navDer{
+    grid-area: navDer;
+    justify-content: end;
+    align-items: end;
+}
+
+.sidebarItem{
+    padding: 1rem;
+    list-style-type: none;
+}
+
+.sidebarItem:hover{
+    background-color: rgb(215, 215, 215);
+    cursor: pointer;
+}
+
+
+header{
+    grid-area: header;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.slider{
+    grid-area: slider;
+    display: flex;
+}
+
+.benefits{
+    grid-area: benefits;
+    display: flex;
+}
+
+.logo{
+    height: 3rem;
+    width: 3rem;
+}
+
+.sesion{
+    width: auto;
+    height: 4vh;
+}
+ 
+.carrito{
+    width: auto;
+    height: 4vh;
+}
+
+}
