@@ -3,6 +3,7 @@
 *{margin: 0;
 padding: 0;
 box-sizing: border-box;
+background-color: #bdf6ff;
 }
 
 /* mobile */
@@ -12,7 +13,7 @@ box-sizing: border-box;
 #overlay{
     height: 100vh;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: #ac74a459;
     position: fixed;
     top: 0;
     left: 0;
@@ -35,17 +36,17 @@ box-sizing: border-box;
     height: 100vh;
     width: 0px;
     z-index: 2;
-    background-color: rgb(255, 255, 255);
     position: fixed;
     top: 0;
     left: 0;
     overflow: hidden;
     transition: 0.3s ease-in-out;
+    background-color: #1483bb;
 }
 
 .navBar{
     display: flex;
-    top: 0;
+    align-items: start;
 }
 
 header{
@@ -66,10 +67,11 @@ header{
     padding: 1rem;
     list-style-type: none;
     width: 300px;
+    background-color: #1483bb;
 }
 
 .sidebarItem:hover{
-    background-color: rgb(215, 215, 215);
+    background-color: #13709e;
     cursor: pointer;
 }
 
